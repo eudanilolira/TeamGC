@@ -7,6 +7,42 @@
 
 import Foundation
 
-class SearchingBank {
+class SearchingBank: ObservableObject {
+    
+    @Published var searchItems: [Search] = []
+    
+    init(){
+        
+    }
+    
+    
+    
+}
+
+class Search: ObservableObject{
+    
+    var text: String
+    
+    @Published var veracityRate: Float?
+    
+    @Published var isConcluded = false
+    
+    @Published var themes: [Theme] = []
+    init(text: String){
+        self.text = text
+    }
+    
+}
+
+class Theme: ObservableObject{
+    
+    var name: String
+    
+    @Published var textsArray: [String] = []
+    
+    init(name: String){
+            
+        self.name = name
+    }
     
 }

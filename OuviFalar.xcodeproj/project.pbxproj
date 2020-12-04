@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0CAEB279257ACA82003091FC /* SearchingBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAEB278257ACA82003091FC /* SearchingBank.swift */; };
 		0CCC36D2257AC73700FD0454 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCC36D1257AC73700FD0454 /* AppDelegate.swift */; };
 		0CCC36D4257AC73700FD0454 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCC36D3257AC73700FD0454 /* SceneDelegate.swift */; };
 		0CCC36D6257AC73700FD0454 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCC36D5257AC73700FD0454 /* ContentView.swift */; };
@@ -14,9 +15,14 @@
 		0CCC36DB257AC74100FD0454 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CCC36DA257AC74100FD0454 /* Assets.xcassets */; };
 		0CCC36DE257AC74100FD0454 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CCC36DD257AC74100FD0454 /* Preview Assets.xcassets */; };
 		0CCC36E1257AC74100FD0454 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CCC36DF257AC74100FD0454 /* LaunchScreen.storyboard */; };
+		0CD0B4EF257AC8CD00F2005E /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD0B4EE257AC8CD00F2005E /* SearchView.swift */; };
+		0CD0B4F3257AC8EF00F2005E /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD0B4F2257AC8EF00F2005E /* OnboardingView.swift */; };
+		0CD0B4F6257AC90700F2005E /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD0B4F5257AC90700F2005E /* ResultView.swift */; };
+		0CD0B4FA257AC96C00F2005E /* WaitingRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD0B4F9257AC96C00F2005E /* WaitingRoomView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0CAEB278257ACA82003091FC /* SearchingBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchingBank.swift; sourceTree = "<group>"; };
 		0CCC36CE257AC73700FD0454 /* OuviFalar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OuviFalar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CCC36D1257AC73700FD0454 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0CCC36D3257AC73700FD0454 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +32,10 @@
 		0CCC36DD257AC74100FD0454 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0CCC36E0257AC74100FD0454 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0CCC36E2257AC74100FD0454 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CD0B4EE257AC8CD00F2005E /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		0CD0B4F2257AC8EF00F2005E /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		0CD0B4F5257AC90700F2005E /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
+		0CD0B4F9257AC96C00F2005E /* WaitingRoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingRoomView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +68,9 @@
 		0CCC36D0257AC73700FD0454 /* OuviFalar */ = {
 			isa = PBXGroup;
 			children = (
+				0CCC36E9257AC82D00FD0454 /* Views */,
 				0CCC36D1257AC73700FD0454 /* AppDelegate.swift */,
+				0CAEB278257ACA82003091FC /* SearchingBank.swift */,
 				0CCC36D3257AC73700FD0454 /* SceneDelegate.swift */,
 				0CCC36D5257AC73700FD0454 /* ContentView.swift */,
 				0CCC36DA257AC74100FD0454 /* Assets.xcassets */,
@@ -76,6 +88,49 @@
 				0CCC36DD257AC74100FD0454 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0CCC36E9257AC82D00FD0454 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0CD0B4FF257AC9C400F2005E /* OnboardingView */,
+				0CD0B4FE257AC9B400F2005E /* ResultView */,
+				0CD0B4FD257AC9A300F2005E /* SearchView */,
+				0CD0B4F8257AC95600F2005E /* WaitingRoomView */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0CD0B4F8257AC95600F2005E /* WaitingRoomView */ = {
+			isa = PBXGroup;
+			children = (
+				0CD0B4F9257AC96C00F2005E /* WaitingRoomView.swift */,
+			);
+			path = WaitingRoomView;
+			sourceTree = "<group>";
+		};
+		0CD0B4FD257AC9A300F2005E /* SearchView */ = {
+			isa = PBXGroup;
+			children = (
+				0CD0B4EE257AC8CD00F2005E /* SearchView.swift */,
+			);
+			path = SearchView;
+			sourceTree = "<group>";
+		};
+		0CD0B4FE257AC9B400F2005E /* ResultView */ = {
+			isa = PBXGroup;
+			children = (
+				0CD0B4F5257AC90700F2005E /* ResultView.swift */,
+			);
+			path = ResultView;
+			sourceTree = "<group>";
+		};
+		0CD0B4FF257AC9C400F2005E /* OnboardingView */ = {
+			isa = PBXGroup;
+			children = (
+				0CD0B4F2257AC8EF00F2005E /* OnboardingView.swift */,
+			);
+			path = OnboardingView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,7 +206,12 @@
 				0CCC36D2257AC73700FD0454 /* AppDelegate.swift in Sources */,
 				0CCC36D4257AC73700FD0454 /* SceneDelegate.swift in Sources */,
 				0CCC36D6257AC73700FD0454 /* ContentView.swift in Sources */,
+				0CD0B4FA257AC96C00F2005E /* WaitingRoomView.swift in Sources */,
+				0CD0B4F3257AC8EF00F2005E /* OnboardingView.swift in Sources */,
+				0CD0B4EF257AC8CD00F2005E /* SearchView.swift in Sources */,
+				0CD0B4F6257AC90700F2005E /* ResultView.swift in Sources */,
 				0CCC36D9257AC73700FD0454 /* OuviFalar.xcdatamodeld in Sources */,
+				0CAEB279257ACA82003091FC /* SearchingBank.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

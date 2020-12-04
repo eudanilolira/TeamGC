@@ -19,6 +19,8 @@
 		0CD0B4F3257AC8EF00F2005E /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD0B4F2257AC8EF00F2005E /* OnboardingView.swift */; };
 		0CD0B4F6257AC90700F2005E /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD0B4F5257AC90700F2005E /* ResultView.swift */; };
 		0CD0B4FA257AC96C00F2005E /* WaitingRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD0B4F9257AC96C00F2005E /* WaitingRoomView.swift */; };
+		ACFC5E90257ACDC700881712 /* PositiveResultCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFC5E8F257ACDC700881712 /* PositiveResultCard.swift */; };
+		ACFC5E94257AD73B00881712 /* NegativeResultCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFC5E93257AD73B00881712 /* NegativeResultCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		0CD0B4F2257AC8EF00F2005E /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		0CD0B4F5257AC90700F2005E /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
 		0CD0B4F9257AC96C00F2005E /* WaitingRoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingRoomView.swift; sourceTree = "<group>"; };
+		ACFC5E8F257ACDC700881712 /* PositiveResultCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositiveResultCard.swift; sourceTree = "<group>"; };
+		ACFC5E93257AD73B00881712 /* NegativeResultCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NegativeResultCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +125,8 @@
 			isa = PBXGroup;
 			children = (
 				0CD0B4F5257AC90700F2005E /* ResultView.swift */,
+				ACFC5E8F257ACDC700881712 /* PositiveResultCard.swift */,
+				ACFC5E93257AD73B00881712 /* NegativeResultCard.swift */,
 			);
 			path = ResultView;
 			sourceTree = "<group>";
@@ -207,9 +213,11 @@
 				0CCC36D4257AC73700FD0454 /* SceneDelegate.swift in Sources */,
 				0CCC36D6257AC73700FD0454 /* ContentView.swift in Sources */,
 				0CD0B4FA257AC96C00F2005E /* WaitingRoomView.swift in Sources */,
+				ACFC5E90257ACDC700881712 /* PositiveResultCard.swift in Sources */,
 				0CD0B4F3257AC8EF00F2005E /* OnboardingView.swift in Sources */,
 				0CD0B4EF257AC8CD00F2005E /* SearchView.swift in Sources */,
 				0CD0B4F6257AC90700F2005E /* ResultView.swift in Sources */,
+				ACFC5E94257AD73B00881712 /* NegativeResultCard.swift in Sources */,
 				0CCC36D9257AC73700FD0454 /* OuviFalar.xcdatamodeld in Sources */,
 				0CAEB279257ACA82003091FC /* SearchingBank.swift in Sources */,
 			);

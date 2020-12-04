@@ -9,7 +9,19 @@ import SwiftUI
 
 struct WaitingRoomView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack (
+            alignment: .leading,
+            spacing: 10
+        ){
+            Text("Estamos procurando...")
+            Spacer()
+        }
+        
+        VStack(){
+            Text("Usar máscara ajuda a previnir contágio de COVID19")
+        }
+        
+        
     }
 }
 

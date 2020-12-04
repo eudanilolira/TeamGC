@@ -14,12 +14,11 @@ struct WaitingRoomView: View {
             spacing: 10
         ){
             Text("Estamos procurando...")
-            Spacer()
+            Text("Usar máscara ajuda a previnir contágio de COVID19")
+           
+
         }
         
-        VStack(){
-            Text("Usar máscara ajuda a previnir contágio de COVID19")
-        }
         
         
     }

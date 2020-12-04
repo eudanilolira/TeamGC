@@ -9,7 +9,7 @@ import SwiftUI
 
 struct WaitingRoomView: View {
     var body: some View {
-        VStack (alignment: .leading){
+        VStack{
             VStack(){
                 Text("Estamos procurando...")
                     .font(.title)
@@ -32,6 +32,7 @@ struct WaitingRoomView: View {
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 32, height: 32)
                         .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
+                        .animation(/*@START_MENU_TOKEN@*/.easeIn/*@END_MENU_TOKEN@*/)
                     Image(systemName: "staroflife")
                         .resizable()
                         .aspectRatio(contentMode: .fit)

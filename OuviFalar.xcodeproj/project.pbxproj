@@ -20,6 +20,8 @@
 		0CD0B4F3257AC8EF00F2005E /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD0B4F2257AC8EF00F2005E /* OnboardingView.swift */; };
 		0CD0B4F6257AC90700F2005E /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD0B4F5257AC90700F2005E /* ResultView.swift */; };
 		0CD0B4FA257AC96C00F2005E /* WaitingRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD0B4F9257AC96C00F2005E /* WaitingRoomView.swift */; };
+		35DACB0F257C248D009D4A60 /* TweetIntentClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 35DACB0E257C248D009D4A60 /* TweetIntentClassifier.mlmodel */; };
+		35DACB12257C2E6D009D4A60 /* View+ResignKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DACB11257C2E6D009D4A60 /* View+ResignKeyboard.swift */; };
 		ACFC5E90257ACDC700881712 /* PositiveResultCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFC5E8F257ACDC700881712 /* PositiveResultCard.swift */; };
 		ACFC5E94257AD73B00881712 /* NegativeResultCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFC5E93257AD73B00881712 /* NegativeResultCard.swift */; };
 /* End PBXBuildFile section */
@@ -41,6 +43,8 @@
 		0CD0B4F5257AC90700F2005E /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
 		0CD0B4F9257AC96C00F2005E /* WaitingRoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingRoomView.swift; sourceTree = "<group>"; };
 		354455D8257BCDB90005D45B /* IntentClassifierPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = IntentClassifierPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		35DACB0E257C248D009D4A60 /* TweetIntentClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = TweetIntentClassifier.mlmodel; sourceTree = "<group>"; };
+		35DACB11257C2E6D009D4A60 /* View+ResignKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+ResignKeyboard.swift"; sourceTree = "<group>"; };
 		ACFC5E8F257ACDC700881712 /* PositiveResultCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositiveResultCard.swift; sourceTree = "<group>"; };
 		ACFC5E93257AD73B00881712 /* NegativeResultCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NegativeResultCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -77,7 +81,9 @@
 			children = (
 				0CCC36E9257AC82D00FD0454 /* Views */,
 				0CCC36D1257AC73700FD0454 /* AppDelegate.swift */,
+				35DACB11257C2E6D009D4A60 /* View+ResignKeyboard.swift */,
 				0CAEB278257ACA82003091FC /* SearchingBank.swift */,
+				35DACB0E257C248D009D4A60 /* TweetIntentClassifier.mlmodel */,
 				354455D8257BCDB90005D45B /* IntentClassifierPlayground.playground */,
 				0CCC36D3257AC73700FD0454 /* SceneDelegate.swift */,
 				0CCC36D5257AC73700FD0454 /* ContentView.swift */,
@@ -216,6 +222,7 @@
 			files = (
 				0CCC36D2257AC73700FD0454 /* AppDelegate.swift in Sources */,
 				0CCC36D4257AC73700FD0454 /* SceneDelegate.swift in Sources */,
+				35DACB0F257C248D009D4A60 /* TweetIntentClassifier.mlmodel in Sources */,
 				0CCC36D6257AC73700FD0454 /* ContentView.swift in Sources */,
 				0CD0B4FA257AC96C00F2005E /* WaitingRoomView.swift in Sources */,
 				ACFC5E90257ACDC700881712 /* PositiveResultCard.swift in Sources */,
@@ -224,6 +231,7 @@
 				0CD0B4F6257AC90700F2005E /* ResultView.swift in Sources */,
 				0C1404BA257AE21000716069 /* WaitingRoomIcons.swift in Sources */,
 				ACFC5E94257AD73B00881712 /* NegativeResultCard.swift in Sources */,
+				35DACB12257C2E6D009D4A60 /* View+ResignKeyboard.swift in Sources */,
 				0CCC36D9257AC73700FD0454 /* OuviFalar.xcdatamodeld in Sources */,
 				0CAEB279257ACA82003091FC /* SearchingBank.swift in Sources */,
 			);
@@ -366,7 +374,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"OuviFalar/Preview Content\"";
-				DEVELOPMENT_TEAM = KBDYNQ5FQB;
+				DEVELOPMENT_TEAM = P63952MS7L;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = OuviFalar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -387,7 +395,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"OuviFalar/Preview Content\"";
-				DEVELOPMENT_TEAM = KBDYNQ5FQB;
+				DEVELOPMENT_TEAM = P63952MS7L;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = OuviFalar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

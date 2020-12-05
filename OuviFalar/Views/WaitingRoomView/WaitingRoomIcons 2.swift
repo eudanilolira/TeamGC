@@ -17,8 +17,8 @@ struct WaitingRoomIcons: View {
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                     .frame(width: 32, height: 32)
-                    .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
-                    .offset(y: isAnimating ? -30 : 0)
+                    .foregroundColor(UIColor.primaryColor)
+                    .offset(y: isAnimating ? -50 : 0)
                     .onAppear {
                         self.isAnimating = true
                         self.images.shuffle()

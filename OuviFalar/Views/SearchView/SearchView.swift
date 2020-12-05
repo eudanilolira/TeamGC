@@ -11,7 +11,7 @@ struct SearchView: View {
     
     @State var searchText: String = ""
     
-    var category = ["Cloroquina", "Eleições", "Covid"]
+    var category = ["Cloroquina", "Vacina", "Covid"]
     @State private var selectedCategory = 0
     
     @State private var isPickerShown: Bool = false
@@ -61,12 +61,12 @@ struct SearchView: View {
                 .padding([.leading, .top])
                 
                 TextEditor(text: $searchText)
-                    .border(Color(.systemGray3))
                     .cornerRadius(5)
+                    .border(Color(.systemGray3))
                     .padding(.horizontal)
                 
                 
-                NavigationLink(destination: WaitingRoomView(searchContent: searchText)){
+                NavigationLink(destination: WaitingRoomView(item: Search(text: searchText))){
                     Text("Checar")
                         .padding()
                         .padding(.horizontal, 40)
@@ -123,6 +123,7 @@ struct SearchView: View {
                 
                 
             }
+            .resingKeyboardOnTapGesture()
             .blur(radius: isPickerShown ? 3.0 : 0)
             .disabled(isPickerShown)
             .onTapGesture {
@@ -148,7 +149,7 @@ struct SearchView: View {
         }
         .navigationTitle("Pesquisa")
         .navigationBarHidden(false)
-
+        
     }
     
 }

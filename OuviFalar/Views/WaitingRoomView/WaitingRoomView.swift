@@ -8,9 +8,16 @@
 import SwiftUI
 
 struct WaitingRoomView: View {
-    var searchContent: String = "Texto"
+    @ObservedObject var item: Search
+    
     var body: some View {
         VStack{
+            NavigationLink(
+                destination: ResultView(test: item.intent == "contra"),
+                isActive: $item.isConcluded){
+                    EmptyView()
+                }
+            
             HStack {
                 Text("Estamos procurando...")
                     .font(.title)
@@ -21,51 +28,59 @@ struct WaitingRoomView: View {
             .padding()
             
             
-                Text("\"\(searchContent)\"")
-                    .font(/*@START_MENU_TOKEN@*/.title2/*@END_MENU_TOKEN@*/)
-                    .padding(.top, 15)
-                    .frame(width: 295, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: .center)
-
+            Text("\"\(item.text)\"")
+                .font(.title2)
+                .italic()
+                .padding()
+                .frame(maxWidth: UIScreen.main.bounds.width, maxHeight: 200, alignment: .center)
+                .background(Color(.systemGray6))
+                .cornerRadius(10)
+                .padding(.horizontal, 40)
+            
             
             Spacer()
-                .frame(minHeight: 70, idealHeight:150, maxHeight: 200, alignment: .center)
+            WaitingRoomIcons()
             
-                WaitingRoomIcons()
-                                
-                Text("Assim que conseguirmos a resposta, iremos te notificar!")
-                    .multilineTextAlignment(.center)
-                    .frame(width: 240, height: 75, alignment: .center)
-                    .font(Font.system(size: 20, design: .default))
-                    .padding()
-                
+            Text("Assim que conseguirmos a resposta, iremos te notificar!")
+                .multilineTextAlignment(.center)
+                .frame(width: 240, height: 75, alignment: .center)
+                .font(Font.system(size: 20, design: .default))
+                .padding()
+            
+            if let intent = item.intent{
+                Text(intent)
+            }
+            
+            
+            HStack {
+                Text("Como checamos?")
+                    .font(.headline)
+                    .padding([.top, .leading, .trailing])
+                Spacer()
+            }
+            
+            
+            HStack{
+                Text("1. Lemos o que você ouviu falar.\n2. Pesquisamos em fontes confiáveis sobre o assunto.\n3. Trazemos as respostas para você.")
+                    .font(.subheadline)
+                    .lineSpacing(5)
+                    .multilineTextAlignment(.leading)
+                    .frame(minWidth: 0, idealWidth: 380, maxWidth: 380, minHeight: 0, idealHeight: 70, maxHeight: 70, alignment: .center)
                 Spacer()
                 
-                HStack {
-                    Text("Como checamos?")
-                        .font(.headline)
-                        .padding([.top, .leading, .trailing])
-                    Spacer()
-                }
-
-                
-                HStack{
-                    Text("1- Lemos o que você ouviu falar.\n2- Pesquisamos em fontes confiáveis sobre o assunto.\n3- Trazemos as respostas para você.")
-                        .font(.subheadline)
-                        .multilineTextAlignment(.leading)
-                        .frame(minWidth: 0, idealWidth: 380, maxWidth: 380, minHeight: 0, idealHeight: 70, maxHeight: 70, alignment: .center)
-                    Spacer()
-                        
-                }
-                .padding(.trailing,5)
-                .padding(.bottom)
+            }
+            .padding([.leading,.trailing,.bottom])
             
             Spacer()
+        }
+        .onAppear{
+            item.startSearch()
         }
     }
 }
 
 struct WaitingRoomView_Previews: PreviewProvider {
     static var previews: some View {
-        WaitingRoomView()
+        WaitingRoomView(item: Search(text: "Cloroquina mata"))
     }
 }

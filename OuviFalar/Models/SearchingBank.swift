@@ -14,20 +14,15 @@ class SearchingBank: ObservableObject {
     init(){
         
     }
-    
-    
-    
 }
 
 class Search: ObservableObject{
     
     var text: String
-    
-    @Published var veracityRate: Float?
-    
+    @Published var type: SearchType
     @Published var isConcluded = false
-    
     @Published var themes: [Theme] = []
+    
     init(text: String){
         self.text = text
     }
@@ -37,11 +32,9 @@ class Search: ObservableObject{
 class Theme: ObservableObject{
     
     var name: String
-    
     @Published var textsArray: [String] = []
     
     init(name: String){
-            
         self.name = name
     }
     

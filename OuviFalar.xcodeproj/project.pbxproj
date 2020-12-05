@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C13F05B257BFE4D000FAE09 /* SearchType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C13F05A257BFE4D000FAE09 /* SearchType.swift */; };
 		0C1404BA257AE21000716069 /* WaitingRoomIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1404B9257AE21000716069 /* WaitingRoomIcons.swift */; };
 		0CAEB279257ACA82003091FC /* SearchingBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAEB278257ACA82003091FC /* SearchingBank.swift */; };
 		0CCC36D2257AC73700FD0454 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCC36D1257AC73700FD0454 /* AppDelegate.swift */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C13F05A257BFE4D000FAE09 /* SearchType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchType.swift; sourceTree = "<group>"; };
 		0C1404B9257AE21000716069 /* WaitingRoomIcons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingRoomIcons.swift; sourceTree = "<group>"; };
 		0CAEB278257ACA82003091FC /* SearchingBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchingBank.swift; sourceTree = "<group>"; };
 		0CCC36CE257AC73700FD0454 /* OuviFalar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OuviFalar.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,6 +58,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C13F04F257BEFD0000FAE09 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0CAEB278257ACA82003091FC /* SearchingBank.swift */,
+				0C13F05A257BFE4D000FAE09 /* SearchType.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		0CCC36C5257AC73700FD0454 = {
 			isa = PBXGroup;
 			children = (
@@ -75,9 +86,9 @@
 		0CCC36D0257AC73700FD0454 /* OuviFalar */ = {
 			isa = PBXGroup;
 			children = (
+				0C13F04F257BEFD0000FAE09 /* Models */,
 				0CCC36E9257AC82D00FD0454 /* Views */,
 				0CCC36D1257AC73700FD0454 /* AppDelegate.swift */,
-				0CAEB278257ACA82003091FC /* SearchingBank.swift */,
 				354455D8257BCDB90005D45B /* IntentClassifierPlayground.playground */,
 				0CCC36D3257AC73700FD0454 /* SceneDelegate.swift */,
 				0CCC36D5257AC73700FD0454 /* ContentView.swift */,
@@ -217,6 +228,7 @@
 				0CCC36D2257AC73700FD0454 /* AppDelegate.swift in Sources */,
 				0CCC36D4257AC73700FD0454 /* SceneDelegate.swift in Sources */,
 				0CCC36D6257AC73700FD0454 /* ContentView.swift in Sources */,
+				0C13F05B257BFE4D000FAE09 /* SearchType.swift in Sources */,
 				0CD0B4FA257AC96C00F2005E /* WaitingRoomView.swift in Sources */,
 				ACFC5E90257ACDC700881712 /* PositiveResultCard.swift in Sources */,
 				0CD0B4F3257AC8EF00F2005E /* OnboardingView.swift in Sources */,

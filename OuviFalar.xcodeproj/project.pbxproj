@@ -20,6 +20,7 @@
 		0CD0B4F3257AC8EF00F2005E /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD0B4F2257AC8EF00F2005E /* OnboardingView.swift */; };
 		0CD0B4F6257AC90700F2005E /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD0B4F5257AC90700F2005E /* ResultView.swift */; };
 		0CD0B4FA257AC96C00F2005E /* WaitingRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD0B4F9257AC96C00F2005E /* WaitingRoomView.swift */; };
+		357DAD1E257C02E500276AD5 /* View+resignKeyboardOnTapGesture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 357DAD1D257C02E500276AD5 /* View+resignKeyboardOnTapGesture.swift */; };
 		ACFC5E90257ACDC700881712 /* PositiveResultCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFC5E8F257ACDC700881712 /* PositiveResultCard.swift */; };
 		ACFC5E94257AD73B00881712 /* NegativeResultCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFC5E93257AD73B00881712 /* NegativeResultCard.swift */; };
 /* End PBXBuildFile section */
@@ -41,6 +42,7 @@
 		0CD0B4F5257AC90700F2005E /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
 		0CD0B4F9257AC96C00F2005E /* WaitingRoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingRoomView.swift; sourceTree = "<group>"; };
 		354455D8257BCDB90005D45B /* IntentClassifierPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = IntentClassifierPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		357DAD1D257C02E500276AD5 /* View+resignKeyboardOnTapGesture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+resignKeyboardOnTapGesture.swift"; sourceTree = "<group>"; };
 		ACFC5E8F257ACDC700881712 /* PositiveResultCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositiveResultCard.swift; sourceTree = "<group>"; };
 		ACFC5E93257AD73B00881712 /* NegativeResultCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NegativeResultCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -86,6 +88,7 @@
 				0CCC36E2257AC74100FD0454 /* Info.plist */,
 				0CCC36D7257AC73700FD0454 /* OuviFalar.xcdatamodeld */,
 				0CCC36DC257AC74100FD0454 /* Preview Content */,
+				357DAD1D257C02E500276AD5 /* View+resignKeyboardOnTapGesture.swift */,
 			);
 			path = OuviFalar;
 			sourceTree = "<group>";
@@ -214,6 +217,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				357DAD1E257C02E500276AD5 /* View+resignKeyboardOnTapGesture.swift in Sources */,
 				0CCC36D2257AC73700FD0454 /* AppDelegate.swift in Sources */,
 				0CCC36D4257AC73700FD0454 /* SceneDelegate.swift in Sources */,
 				0CCC36D6257AC73700FD0454 /* ContentView.swift in Sources */,
@@ -366,7 +370,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"OuviFalar/Preview Content\"";
-				DEVELOPMENT_TEAM = 389X9SAV47;
+				DEVELOPMENT_TEAM = P63952MS7L;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = OuviFalar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -387,7 +391,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"OuviFalar/Preview Content\"";
-				DEVELOPMENT_TEAM = 389X9SAV47;
+				DEVELOPMENT_TEAM = P63952MS7L;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = OuviFalar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

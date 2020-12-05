@@ -8,16 +8,9 @@
 import SwiftUI
 
 struct OnboardView: View{
-    @State var searchViewIsActive = false
     
     var body: some View{
         NavigationView{
-            ZStack{
-                NavigationLink(
-                    destination: SearchView(searchViewIsActive: $searchViewIsActive),
-                    isActive: $searchViewIsActive){
-                    EmptyView()
-                }
                 
                 VStack(alignment: .leading){
                     VStack(alignment: .leading){
@@ -83,9 +76,7 @@ struct OnboardView: View{
                     }
                     
                     Spacer()
-                    Button(action: {
-                        searchViewIsActive.toggle()
-                    }){
+                    NavigationLink(destination: SearchView()){
                         Text("Começar")
                             .font(.headline)
                             .foregroundColor(Color(.systemBackground))
@@ -98,8 +89,10 @@ struct OnboardView: View{
                     
                 }
                 .background(Color.clear)
+                .navigationBarHidden(true)
             }
-        }
+        
+        
     }
 }
 

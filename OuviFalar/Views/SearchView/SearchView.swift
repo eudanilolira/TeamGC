@@ -9,144 +9,148 @@ import SwiftUI
 
 struct SearchView: View {
     
-    @Binding var searchViewIsActive: Bool
-    
     @State var searchText: String = ""
     
-    var category = ["Cloroquina", "Bolsonaro", "Covid"]
+    var category = ["Cloroquina", "Eleições", "Covid"]
     @State private var selectedCategory = 0
+    
+    @State private var isPickerShown: Bool = false
     
     struct  Historico {
         var title: String = ""
         var description: String = ""
-        //qnd tiver o verdadeiro ou falso
     }
     
     var historico: [Historico] = [Historico(title: "Cloroquina mata", description: "- Acreditamos que esse tema tem grande potencial de ser fake news e por isso não recomendamos seu compartilhamento."), Historico(title: "Usar máscara ajuda a evitar corona?", description: "- Acreditamos que esse tema tem grande potencial de ser verídico, mas recomendamos que você avalie a fonte antes de compartilhá-la."), Historico(title: "Cloroquina faz bem feito água?", description: "- Acreditamos que esse tema tem grande potencial de ser fake news e por isso não recomendamos seu compartilhamento.")]
     
     let textField = UITextView()
     
-    //UITableViewCell.appearance().cellSelectionStyle = .none
-    
     var body: some View {
-        
-        NavigationView {
-            
-            ZStack{
-
-                VStack{
+        ZStack(alignment: .bottom){
+            VStack{
+                
+                HStack(){
+                    Text("Selecione a categoria")
+                        .font(.title3)
+                        .fontWeight(.semibold)
                     
-                    HStack(){
-                        Text("Selecione a categoria")
-                            .font(.title3)
-                            .fontWeight(.semibold)
-                            .padding()
-                        Spacer()
-                    }.padding()
-                    
-
-                    Picker(selection: $selectedCategory, label: Text("Selecione a categoria: ")) {
-                        ForEach(0 ..< category.count) {
-                            Text(self.category[$0])
-                        }
-                    }
-                    .padding()
-                    .pickerStyle(WheelPickerStyle())
-
-                    
-                    HStack(){
-                        Text("O que tu ouviu falar?")
-                            .font(.title3)
-                            .fontWeight(.semibold)
-                            //.padding(.trailing, 190.0)
-                        
-                        
-                    }
-                    .padding(.top, -50.0)
-                    
-                    TextEditor(text: $searchText)
-                        .frame(width: 360, height: 140, alignment: .center)
-                        .border(Color(.systemGray3))
-                        .cornerRadius(5)
-                        .padding(.top, -15)
                     Spacer()
-                    
-                    Button(action:{
-                    }){
-                        ZStack{
-                            Rectangle()
-                                .frame(width: 160, height: 50, alignment: .center)
-                                .cornerRadius(15)
-                                .shadow(radius: 7)
-                                .foregroundColor(UIColor.primaryColor)
-                                .padding()
-                            
-                            Text("Checar")
-                                .foregroundColor(.white)
-                        }
-                    }
-                    
-                    //criar o historico
-                    
-                    HStack {
-                        Text("Histórico")
-                            .font(.headline)
-                            .padding(.top, 20)
-                        
+                }
+                .padding()
+                Button(action:{
+                    isPickerShown = true
+                }){
+                    HStack{
+                        Spacer()
+                        Text(category[selectedCategory])
+                            .padding()
+                            .foregroundColor(.primary)
                         Spacer()
                     }
-                    
-                    .padding(.top, 20)
-                    .padding([.leading, .bottom])
-                    
-                    ScrollView(.horizontal) {
-                        LazyHStack(spacing: 1) {
+                }
+                .background(Color(.systemGray6))
+                .cornerRadius(10)
+                .padding(.horizontal)
+                
+                HStack(){
+                    Text("O que tu ouviu falar?")
+                        .font(.title3)
+                        .fontWeight(.semibold)
+                    Spacer()
+                }
+                .padding([.leading, .top])
+                
+                TextEditor(text: $searchText)
+                    .border(Color(.systemGray3))
+                    .cornerRadius(5)
+                    .padding(.horizontal)
+                
+                
+                NavigationLink(destination: WaitingRoomView(searchContent: searchText)){
+                    Text("Checar")
+                        .padding()
+                        .padding(.horizontal, 40)
+                        .background(UIColor.primaryColor)
+                        .foregroundColor(Color(.systemBackground))
+                        .cornerRadius(10)
+                        .shadow(radius: 7)
+                }
+                .padding(.top)
+                .disabled(searchText.isEmpty)
+                HStack {
+                    Text("Histórico")
+                        .font(.headline)
+                    Spacer()
+                }
+                
+                .padding([.top, .leading])
+                
+                ScrollView(.horizontal) {
+                    LazyHStack(spacing: 1) {
+                        
+                        ForEach(0..<(historico.count)){ index in
                             
-                            ForEach(0..<(historico.count)){ index in
-                                
-                                VStack{
-                                    HStack {
-                                        Text(historico[index].title)
-                                            .fontWeight(.bold)
-                                            .foregroundColor(.white)
-                                            .padding([.top, .leading, .trailing])
-                                        Image(systemName: "xmark.circle")
-                                            .padding()
-                                            .foregroundColor(.red)
-                                        
-                                        Spacer()
-                                    }
+                            VStack{
+                                HStack {
+                                    Text(historico[index].title)
+                                        .fontWeight(.bold)
+                                        .foregroundColor(.white)
+                                        .padding([.top, .leading, .trailing])
+                                    Image(systemName: "xmark.circle")
+                                        .padding()
+                                        .foregroundColor(.red)
                                     
-                                    HStack {
-                                        Text(historico[index].description)
-                                            .padding([.leading, .bottom, .trailing])
-                                            .padding(.top, 5)
-                                            .foregroundColor(Color(.systemGray6))
-                                    }
+                                    Spacer()
                                 }
                                 
-                                .frame(width: 320, height: 170)
-                                .background(UIColor.primaryColor)
-                                .cornerRadius(20)
-                                .padding()
                                 
+                                Text(historico[index].description)
+                                    .padding([.leading, .bottom, .trailing])
+                                    .padding(.top, 5)
+                                    .foregroundColor(Color(.systemGray6))
+                                
+                                Spacer()
                             }
+                            
+                            .frame(maxWidth: 320)
+                            .background(UIColor.primaryColor)
+                            .cornerRadius(20)
+                            .padding()
+                            
                         }
                     }
-                    .padding(.bottom, 30.0)
-                    
                 }
-                .navigationTitle("Pesquisa")
                 
-            }.ignoresSafeArea()
+                
+            }
+            .blur(radius: isPickerShown ? 3.0 : 0)
+            .disabled(isPickerShown)
+            .onTapGesture {
+                if isPickerShown{
+                    isPickerShown = false
+                }
+            }
+            
+            VStack{
+                Picker(selection: $selectedCategory, label: Text("Selecione a categoria: ")) {
+                    ForEach(0 ..< category.count) {
+                        Text(self.category[$0])
+                    }
+                }
+                .pickerStyle(WheelPickerStyle())
+                .padding()
+            }
+            .background(Color(.systemGray6))
+            .offset(y: isPickerShown ? 0 : UIScreen.main.bounds.height)
+            .animation(.spring())
+            
+            
         }
-        .navigationBarHidden(true)
+        .navigationTitle("Pesquisa")
+        .navigationBarHidden(false)
 
     }
     
-    //    init() {
-    //        UINavigationBar.appearance().backgroundColor = UIColor.primaryUIColor
-    //    }
 }
 
 struct WaitingView: View {
@@ -158,8 +162,10 @@ struct WaitingView: View {
     }
 }
 
-//struct SearchView_Previews: PreviewProvider {
-//    static var previews: some View {
-//        SearchView(searchViewIsActive: $searchViewIsActive)
-//    }
-//}
+struct SearchView_Previews: PreviewProvider {
+    static var previews: some View {
+        NavigationView{
+            SearchView()
+        }
+    }
+}

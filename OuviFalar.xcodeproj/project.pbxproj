@@ -40,6 +40,7 @@
 		0CD0B4F2257AC8EF00F2005E /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		0CD0B4F5257AC90700F2005E /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
 		0CD0B4F9257AC96C00F2005E /* WaitingRoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingRoomView.swift; sourceTree = "<group>"; };
+		354455D8257BCDB90005D45B /* IntentClassifierPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = IntentClassifierPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		ACFC5E8F257ACDC700881712 /* PositiveResultCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositiveResultCard.swift; sourceTree = "<group>"; };
 		ACFC5E93257AD73B00881712 /* NegativeResultCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NegativeResultCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -77,6 +78,7 @@
 				0CCC36E9257AC82D00FD0454 /* Views */,
 				0CCC36D1257AC73700FD0454 /* AppDelegate.swift */,
 				0CAEB278257ACA82003091FC /* SearchingBank.swift */,
+				354455D8257BCDB90005D45B /* IntentClassifierPlayground.playground */,
 				0CCC36D3257AC73700FD0454 /* SceneDelegate.swift */,
 				0CCC36D5257AC73700FD0454 /* ContentView.swift */,
 				0CCC36DA257AC74100FD0454 /* Assets.xcassets */,
@@ -364,7 +366,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"OuviFalar/Preview Content\"";
-				DEVELOPMENT_TEAM = KBDYNQ5FQB;
+				DEVELOPMENT_TEAM = P63952MS7L;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = OuviFalar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -385,7 +387,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"OuviFalar/Preview Content\"";
-				DEVELOPMENT_TEAM = KBDYNQ5FQB;
+				DEVELOPMENT_TEAM = P63952MS7L;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = OuviFalar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (

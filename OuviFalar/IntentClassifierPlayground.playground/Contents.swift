@@ -18,7 +18,7 @@ do {
     print("Evaluation accuracy: \(evaluationAccuracy)")
     let metadata = MLModelMetadata(author: "Samuel Brasileiro",
                                    shortDescription: "A model trained to classify the intent of the tweet", version: "1.0")
-    let modelFileURL = URL(fileURLWithPath: "/Users/samuelbrasileiro/Downloads/TweetIntentClassifier.mlmodel")
+    let modelFileURL = URL(fileURLWithPath: "../../TweetIntentClassifier.mlmodel")
     try intentClassifier.write(to: modelFileURL, metadata: metadata)
 } catch {
     print(error.localizedDescription)

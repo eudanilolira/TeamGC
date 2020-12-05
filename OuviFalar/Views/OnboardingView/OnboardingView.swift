@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct OnboardView: View{
-    let color = Color(red: 0x66/0xff, green: 0x99/0xff, blue: 0xf2/0xff)
     
     var body: some View{
         VStack(alignment: .leading){
@@ -19,7 +18,7 @@ struct OnboardView: View{
                 Text("Ouvi Falar.")
                     .font(.largeTitle)
                     .bold()
-                    .foregroundColor(color)
+                    .foregroundColor(UIColor.primaryColor)
             }.padding()
             .padding(.top, 40)
             Spacer()
@@ -83,7 +82,7 @@ struct OnboardView: View{
                     .foregroundColor(Color(.systemBackground))
                     .padding(.horizontal, 100.0)
                     .padding()
-                    .background(color)
+                    .background(UIColor.primaryColor)
                     .cornerRadius(14)
                     .padding(.bottom, 40)
             }
@@ -100,3 +99,6 @@ struct OnboardView_Previews: PreviewProvider{
     }
 }
 
+extension UIColor {
+    static let primaryColor = Color(red: 0x66/0xff, green: 0x99/0xff, blue: 0xf2/0xff)
+}

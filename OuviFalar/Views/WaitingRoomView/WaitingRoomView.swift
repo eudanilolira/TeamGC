@@ -21,15 +21,17 @@ struct WaitingRoomView: View {
             .padding()
             
             VStack(alignment: .center){
-                Text(searchContent)
-                    .font(/*@START_MENU_TOKEN@*/.title2/*@END_MENU_TOKEN@*/)
-                    .padding(.top, 15)
-                    .frame(width: 295, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: .center)
+                Text("\"\(searchContent)\"")
+                    .font(.title2)
+                    .padding(.top, 25)
+                    .frame(width: 295, height: 100, alignment: .center)
                 Spacer()
             }
             
             VStack(alignment: .center){
                 WaitingRoomIcons()
+                
+                Spacer()
                 
                 Text("Assim que conseguirmos a resposta, iremos te notificar!")
                     .multilineTextAlignment(.center)
@@ -39,7 +41,7 @@ struct WaitingRoomView: View {
                 Spacer()
             }
              
-        }
+        }.navigationBarTitle("Pesquisa")
     }
 }
 

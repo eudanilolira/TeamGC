@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C1404BA257AE21000716069 /* WaitingRoomIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1404B9257AE21000716069 /* WaitingRoomIcons.swift */; };
 		0CAEB279257ACA82003091FC /* SearchingBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAEB278257ACA82003091FC /* SearchingBank.swift */; };
 		0CCC36D2257AC73700FD0454 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCC36D1257AC73700FD0454 /* AppDelegate.swift */; };
 		0CCC36D4257AC73700FD0454 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CCC36D3257AC73700FD0454 /* SceneDelegate.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C1404B9257AE21000716069 /* WaitingRoomIcons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingRoomIcons.swift; sourceTree = "<group>"; };
 		0CAEB278257ACA82003091FC /* SearchingBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchingBank.swift; sourceTree = "<group>"; };
 		0CCC36CE257AC73700FD0454 /* OuviFalar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OuviFalar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CCC36D1257AC73700FD0454 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				0CD0B4F9257AC96C00F2005E /* WaitingRoomView.swift */,
+				0C1404B9257AE21000716069 /* WaitingRoomIcons.swift */,
 			);
 			path = WaitingRoomView;
 			sourceTree = "<group>";
@@ -219,6 +222,7 @@
 				0CD0B4F3257AC8EF00F2005E /* OnboardingView.swift in Sources */,
 				0CD0B4EF257AC8CD00F2005E /* SearchView.swift in Sources */,
 				0CD0B4F6257AC90700F2005E /* ResultView.swift in Sources */,
+				0C1404BA257AE21000716069 /* WaitingRoomIcons.swift in Sources */,
 				ACFC5E94257AD73B00881712 /* NegativeResultCard.swift in Sources */,
 				0CCC36D9257AC73700FD0454 /* OuviFalar.xcdatamodeld in Sources */,
 				0CAEB279257ACA82003091FC /* SearchingBank.swift in Sources */,

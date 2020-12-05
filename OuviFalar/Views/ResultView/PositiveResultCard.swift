@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct PositiveResultCard: View {
+    let color = Color(red: 0x66/0xff, green: 0x99/0xff, blue: 0xf2/0xff)
     var textoPesquisado: String = "Coloquina mata"
     
     var body: some View {
@@ -35,7 +36,7 @@ struct PositiveResultCard: View {
             
         }
         .frame(width: 350, alignment: .center)
-        .background(Color(.systemBlue)).cornerRadius(15)
+        .background(color).cornerRadius(15)
     }
 }
 

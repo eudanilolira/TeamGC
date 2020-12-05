@@ -9,6 +9,7 @@ import SwiftUI
 import UIKit
 
 struct ResultView: View {
+    let color = Color(red: 0x66/0xff, green: 0x99/0xff, blue: 0xf2/0xff)
     var test = true
     @State private var isShareSheetShowing = false
     
@@ -33,7 +34,7 @@ struct ResultView: View {
                 })
                 .foregroundColor(.white)
                 .frame(width: 150, height: 60)
-                .background(Color(.systemBlue))
+                .background(color)
                 .cornerRadius(15)
                 
             }else{

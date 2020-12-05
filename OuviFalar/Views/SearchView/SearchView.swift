@@ -51,7 +51,6 @@ struct SearchView: View {
                     
                 }
                 
-                
                 HStack {
                     Text("1- Lemos o que você ouviu falar\n2- Pesquisamos em fontes confiáveis sobre o assunto (em sites com referência em saúde)\n3- Trazemos as respostas para você")
                         .font(.subheadline)
@@ -75,12 +74,8 @@ struct SearchView: View {
                             Text("Checar")
                                 .foregroundColor(.white)
                         }
-                        
-                        
                     }
-                    
                 }
-                
                 
                 //criar o historico
                 
@@ -107,7 +102,6 @@ struct SearchView: View {
                                         .foregroundColor(.red)
                                     
                                     Spacer()
-                                    
                                 }
                                 
                                 HStack {
@@ -116,7 +110,6 @@ struct SearchView: View {
                                         .padding(.top, 5)
                                         .foregroundColor(Color(.systemGray6))
                                 }
-                                
                             }
                             
                             .frame(width: 300, height: 150)
@@ -128,21 +121,16 @@ struct SearchView: View {
                     }
                 }
                 
-                
                 Spacer()
                 
             }.navigationTitle("Pesquisa")
-            
-            
         }
-        
     }
     
     init() {
         UINavigationBar.appearance().backgroundColor = .blue
     }
 }
-
 
 struct WaitingView: View {
     
@@ -151,10 +139,7 @@ struct WaitingView: View {
         Text("Outra tela")
         
     }
-    
 }
-
-
 
 struct SearchView_Previews: PreviewProvider {
     static var previews: some View {

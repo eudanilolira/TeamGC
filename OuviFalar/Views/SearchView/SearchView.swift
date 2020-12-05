@@ -11,6 +11,9 @@ struct SearchView: View {
     
     @State var searchText: String = ""
     
+    var category = ["Cloroquina"]
+    @State private var selectedCategory = 0
+    
     struct  Historico {
         var title: String = ""
         var description: String = ""
@@ -28,36 +31,54 @@ struct SearchView: View {
         NavigationView {
             
             VStack{
+                                
+                HStack(){
+                    Text("Selecione a categoria")
+                        .font(.title3)
+                        .fontWeight(.semibold)
+                        .padding(.top, 180)
+                        .padding()
+                    Spacer()
+                }
                 
+                
+                Picker(selection: $selectedCategory, label: Text("Selecione a categoria: ")) {
+                    ForEach(0 ..< category.count) {
+                        Text(self.category[$0])
+                    }
+                }
+                .padding(.top, -90.0)
+                                
                 HStack(){
                     Text("O que tu ouviu falar?")
                         .font(.title3)
                         .fontWeight(.semibold)
-                        .padding()
-                        .padding(.top, 40.0)
-                    Spacer()
+                        .padding(.trailing, 190.0)
+                    
+                    
                 }
+                .padding(.top, -50.0)
                 
                 TextEditor(text: $searchText)
                     .frame(width: 360, height: 140, alignment: .center)
                     .border(Color(.systemGray3))
                     .cornerRadius(5)
+                    .padding(.top, -15)
+                Spacer()
                 
-                HStack {
-                    Text("Como checamos?")
-                        .font(.headline)
-                        .padding([.top, .leading, .trailing])
-                    Spacer()
-                    
-                }
+//                HStack {
+//                    Text("Como checamos?")
+//                        .font(.headline)
+//                        .padding([.top, .leading, .trailing])
+//                    Spacer()
+//                }
                 
-                HStack {
-                    Text("1- Lemos o que você ouviu falar\n2- Pesquisamos em fontes confiáveis sobre o assunto (em sites com referência em saúde)\n3- Trazemos as respostas para você")
-                        .font(.subheadline)
-                        .multilineTextAlignment(.leading)
-                        .frame(width: 350, height: 120, alignment: .center)
-                    Spacer()
-                }
+//                HStack {
+//                    Text("1- Lemos o que você ouviu falar\n2- Pesquisamos em fontes confiáveis sobre o assunto (em sites com referência em saúde)\n3- Trazemos as respostas para você")
+//                        .font(.subheadline)
+//                        .multilineTextAlignment(.leading)
+//                        .frame(width: 350, height: 120, alignment: .center)
+//                }
                 
                 
                 NavigationLink(destination: WaitingView()) {
@@ -82,9 +103,13 @@ struct SearchView: View {
                 HStack {
                     Text("Histórico")
                         .font(.headline)
-                        .padding()
+                        .padding(.top, 20)
+                    
                     Spacer()
                 }
+                
+                .padding(.top, 20)
+                .padding([.leading, .bottom])
                 
                 ScrollView(.horizontal) {
                     LazyHStack(spacing: 1) {
@@ -112,7 +137,7 @@ struct SearchView: View {
                                 }
                             }
                             
-                            .frame(width: 300, height: 150)
+                            .frame(width: 320, height: 170)
                             .background(Color(.systemTeal))
                             .cornerRadius(20)
                             .padding()
@@ -120,10 +145,10 @@ struct SearchView: View {
                         }
                     }
                 }
+                .padding(.bottom, 30.0)
                 
-                Spacer()
-                
-            }.navigationTitle("Pesquisa")
+            }.ignoresSafeArea(.all)
+            .navigationTitle("Pesquisa")
         }
     }
     

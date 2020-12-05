@@ -19,7 +19,7 @@ class SearchingBank: ObservableObject {
 class Search: ObservableObject{
     
     var text: String
-    @Published var type: SearchType
+    @Published var type: SearchType!
     @Published var isConcluded = false
     @Published var themes: [Theme] = []
     

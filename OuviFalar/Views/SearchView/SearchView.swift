@@ -6,7 +6,6 @@
 //
 
 import SwiftUI
-import CoreData
 
 struct SearchView: View {
     
@@ -85,7 +84,6 @@ struct SearchView: View {
                 NavigationLink(destination: WaitingView()) {
                     //transformar em butto
                     Button(action:{
-                        
                     }){
                         ZStack{
                             Rectangle()

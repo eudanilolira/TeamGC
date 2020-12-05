@@ -8,64 +8,38 @@
 import SwiftUI
 
 struct WaitingRoomView: View {
+    var searchContent: String = ""
     var body: some View {
         VStack{
-            VStack(){
+            HStack {
                 Text("Estamos procurando...")
                     .font(.title)
                     .bold()
-                    .padding(.top, 30)
+                Spacer()
             }
+            .padding(.top, 30)
+            .padding()
             
             VStack(alignment: .center){
-                Text("Usar máscara ajuda a previnir contágio de COVID19")
+                Text(searchContent)
                     .font(/*@START_MENU_TOKEN@*/.title2/*@END_MENU_TOKEN@*/)
                     .padding(.top, 15)
                     .frame(width: 295, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: .center)
                 Spacer()
             }
             
-            VStack(){
-                HStack(){
-                    Image(systemName: "waveform.path.ecg")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 32, height: 32)
-                        .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
-                        .animation(/*@START_MENU_TOKEN@*/.easeIn/*@END_MENU_TOKEN@*/)
-                    Image(systemName: "staroflife")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 32, height: 32)
-                        .foregroundColor(.blue)
-                    Image(systemName: "bandage")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 32, height: 32)
-                        .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
-                    Image(systemName: "heart")
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 32, height: 32)
-                        .foregroundColor(/*@START_MENU_TOKEN@*/.blue/*@END_MENU_TOKEN@*/)
-                }
+            VStack(alignment: .center){
+                WaitingRoomIcons()
                 
                 Text("Assim que conseguirmos a resposta, iremos te notificar!")
+                    .multilineTextAlignment(.center)
                     .frame(width: 240, height: 75, alignment: .center)
                     .font(Font.system(size: 20, design: .default))
+                    .padding()
                 Spacer()
             }
-            
-            
-           
-
-            
-            
-            
+             
         }
-        
-        
-        
     }
 }
 

@@ -44,3 +44,17 @@ struct PositiveResultCard_Previews: PreviewProvider {
         PositiveResultCard()
     }
 }
+
+//                HStack {
+//                    Text("Como checamos?")
+//                        .font(.headline)
+//                        .padding([.top, .leading, .trailing])
+//                    Spacer()
+//                }
+
+//                HStack {
+//                    Text("1- Lemos o que você ouviu falar\n2- Pesquisamos em fontes confiáveis sobre o assunto (em sites com referência em saúde)\n3- Trazemos as respostas para você")
+//                        .font(.subheadline)
+//                        .multilineTextAlignment(.leading)
+//                        .frame(width: 350, height: 120, alignment: .center)
+//                }

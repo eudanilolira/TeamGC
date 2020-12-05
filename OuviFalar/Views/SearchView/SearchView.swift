@@ -11,6 +11,9 @@ struct SearchView: View {
     
     @State var searchText: String = ""
     
+    var category = ["Cloroquina"]
+    @State private var selectedCategory = 0
+    
     struct  Historico {
         var title: String = ""
         var description: String = ""
@@ -28,6 +31,17 @@ struct SearchView: View {
         NavigationView {
             
             VStack{
+                HStack(){
+                    Text("Selecione a categoria")
+                }
+                
+                VStack {
+                    Picker(selection: $selectedCategory, label: Text("Selecione a categoria: ")) {
+                        ForEach(0 ..< category.count) {
+                            Text(self.category[$0])
+                        }
+                    }
+                }
                 
                 HStack(){
                     Text("O que tu ouviu falar?")
@@ -39,7 +53,7 @@ struct SearchView: View {
                 }
                 
                 TextEditor(text: $searchText)
-                    .frame(width: 360, height: 140, alignment: .center)
+                    .frame(width: 260, height: 140, alignment: .center)
                     .border(Color(.systemGray3))
                     .cornerRadius(5)
                 

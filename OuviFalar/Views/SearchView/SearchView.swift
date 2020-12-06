@@ -21,7 +21,7 @@ struct SearchView: View {
         var description: String = ""
     }
     
-    var historico: [Historico] = [Historico(title: "Cloroquina mata", description: "- Acreditamos que esse tema tem grande potencial de ser fake news e por isso não recomendamos seu compartilhamento."), Historico(title: "Usar máscara ajuda a evitar corona?", description: "- Acreditamos que esse tema tem grande potencial de ser verídico, mas recomendamos que você avalie a fonte antes de compartilhá-la."), Historico(title: "Cloroquina faz bem feito água?", description: "- Acreditamos que esse tema tem grande potencial de ser fake news e por isso não recomendamos seu compartilhamento.")]
+    var historico: [Historico] = [Historico(title: "Cloroquina é recomendável para a Covid", description: "- Acreditamos que esse tema tem grande potencial de ser fake news e por isso não recomendamos seu compartilhamento."), Historico(title: "Cloroquina pode causar infarto", description: "- Não encontramos indícios claros de que se trata de uma Fake News, mas recomendamos que você avalie a fonte antes de compartilhá-la."), Historico(title: "Cloroquina é usada para Covid desde 2005", description: "- Acreditamos que esse tema tem grande potencial de ser fake news e por isso não recomendamos seu compartilhamento.")]
     
     let textField = UITextView()
     

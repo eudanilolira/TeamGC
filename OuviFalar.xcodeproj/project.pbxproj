@@ -32,6 +32,7 @@
 		35DACB48257D207B009D4A60 /* WaitingRoomIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1404B9257AE21000716069 /* WaitingRoomIcons.swift */; };
 		35DACB4E257D2087009D4A60 /* SearchingBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAEB278257ACA82003091FC /* SearchingBank.swift */; };
 		35DACB51257D2091009D4A60 /* TweetIntentClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 35DACB0E257C248D009D4A60 /* TweetIntentClassifier.mlmodel */; };
+		857EAF3E257D539100D0014E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CCC36DA257AC74100FD0454 /* Assets.xcassets */; };
 		ACFC5E90257ACDC700881712 /* PositiveResultCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFC5E8F257ACDC700881712 /* PositiveResultCard.swift */; };
 		ACFC5E94257AD73B00881712 /* NegativeResultCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFC5E93257AD73B00881712 /* NegativeResultCard.swift */; };
 /* End PBXBuildFile section */
@@ -301,6 +302,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				857EAF3E257D539100D0014E /* Assets.xcassets in Resources */,
 				35DACB26257D083D009D4A60 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -498,8 +500,9 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = OuviFalar/OuviFalar.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"OuviFalar/Preview Content\"";
-				DEVELOPMENT_TEAM = P63952MS7L;
+				DEVELOPMENT_TEAM = ZHXRJ72927;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = OuviFalar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -521,8 +524,9 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = OuviFalar/OuviFalar.entitlements;
 				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"OuviFalar/Preview Content\"";
-				DEVELOPMENT_TEAM = P63952MS7L;
+				DEVELOPMENT_TEAM = ZHXRJ72927;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = OuviFalar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -541,7 +545,8 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = SharedExtension/SharedExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = P63952MS7L;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = ZHXRJ72927;
 				INFOPLIST_FILE = SharedExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -561,7 +566,8 @@
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = SharedExtension/SharedExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = P63952MS7L;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = ZHXRJ72927;
 				INFOPLIST_FILE = SharedExtension/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

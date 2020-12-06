@@ -13,7 +13,7 @@ struct WaitingRoomView: View {
     var body: some View {
         VStack{
             NavigationLink(
-                destination: ResultView(test: item.intent == "contra"),
+                destination: ResultView(item: item),
                 isActive: $item.isConcluded){
                     EmptyView()
                 }

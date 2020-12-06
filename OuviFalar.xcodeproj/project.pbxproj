@@ -22,9 +22,43 @@
 		0CD0B4FA257AC96C00F2005E /* WaitingRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD0B4F9257AC96C00F2005E /* WaitingRoomView.swift */; };
 		35DACB0F257C248D009D4A60 /* TweetIntentClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 35DACB0E257C248D009D4A60 /* TweetIntentClassifier.mlmodel */; };
 		35DACB12257C2E6D009D4A60 /* View+ResignKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DACB11257C2E6D009D4A60 /* View+ResignKeyboard.swift */; };
+		35DACB23257D083D009D4A60 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DACB22257D083D009D4A60 /* ShareViewController.swift */; };
+		35DACB26257D083D009D4A60 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35DACB24257D083D009D4A60 /* MainInterface.storyboard */; };
+		35DACB2A257D083D009D4A60 /* SharedExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 35DACB20257D083D009D4A60 /* SharedExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		35DACB3C257D206B009D4A60 /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD0B4F5257AC90700F2005E /* ResultView.swift */; };
+		35DACB3F257D206E009D4A60 /* PositiveResultCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFC5E8F257ACDC700881712 /* PositiveResultCard.swift */; };
+		35DACB42257D2071009D4A60 /* NegativeResultCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFC5E93257AD73B00881712 /* NegativeResultCard.swift */; };
+		35DACB45257D2078009D4A60 /* WaitingRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD0B4F9257AC96C00F2005E /* WaitingRoomView.swift */; };
+		35DACB48257D207B009D4A60 /* WaitingRoomIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1404B9257AE21000716069 /* WaitingRoomIcons.swift */; };
+		35DACB4E257D2087009D4A60 /* SearchingBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAEB278257ACA82003091FC /* SearchingBank.swift */; };
+		35DACB51257D2091009D4A60 /* TweetIntentClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 35DACB0E257C248D009D4A60 /* TweetIntentClassifier.mlmodel */; };
 		ACFC5E90257ACDC700881712 /* PositiveResultCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFC5E8F257ACDC700881712 /* PositiveResultCard.swift */; };
 		ACFC5E94257AD73B00881712 /* NegativeResultCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFC5E93257AD73B00881712 /* NegativeResultCard.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		35DACB28257D083D009D4A60 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0CCC36C6257AC73700FD0454 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 35DACB1F257D083D009D4A60;
+			remoteInfo = SharedExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		35DACB2E257D083D009D4A60 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				35DACB2A257D083D009D4A60 /* SharedExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0C1404B9257AE21000716069 /* WaitingRoomIcons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingRoomIcons.swift; sourceTree = "<group>"; };
@@ -45,12 +79,25 @@
 		354455D8257BCDB90005D45B /* IntentClassifierPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = IntentClassifierPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		35DACB0E257C248D009D4A60 /* TweetIntentClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = TweetIntentClassifier.mlmodel; sourceTree = "<group>"; };
 		35DACB11257C2E6D009D4A60 /* View+ResignKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+ResignKeyboard.swift"; sourceTree = "<group>"; };
+		35DACB20257D083D009D4A60 /* SharedExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SharedExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		35DACB22257D083D009D4A60 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		35DACB25257D083D009D4A60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		35DACB27257D083D009D4A60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35DACB31257D105E009D4A60 /* SharedExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SharedExtension.entitlements; sourceTree = "<group>"; };
+		35DACB34257D1074009D4A60 /* OuviFalar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OuviFalar.entitlements; sourceTree = "<group>"; };
 		ACFC5E8F257ACDC700881712 /* PositiveResultCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositiveResultCard.swift; sourceTree = "<group>"; };
 		ACFC5E93257AD73B00881712 /* NegativeResultCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NegativeResultCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		0CCC36CB257AC73700FD0454 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35DACB1D257D083D009D4A60 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -64,6 +111,7 @@
 			isa = PBXGroup;
 			children = (
 				0CCC36D0257AC73700FD0454 /* OuviFalar */,
+				35DACB21257D083D009D4A60 /* SharedExtension */,
 				0CCC36CF257AC73700FD0454 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -72,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				0CCC36CE257AC73700FD0454 /* OuviFalar.app */,
+				35DACB20257D083D009D4A60 /* SharedExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -79,6 +128,7 @@
 		0CCC36D0257AC73700FD0454 /* OuviFalar */ = {
 			isa = PBXGroup;
 			children = (
+				35DACB34257D1074009D4A60 /* OuviFalar.entitlements */,
 				0CCC36E9257AC82D00FD0454 /* Views */,
 				0CCC36D1257AC73700FD0454 /* AppDelegate.swift */,
 				35DACB11257C2E6D009D4A60 /* View+ResignKeyboard.swift */,
@@ -150,6 +200,17 @@
 			path = OnboardingView;
 			sourceTree = "<group>";
 		};
+		35DACB21257D083D009D4A60 /* SharedExtension */ = {
+			isa = PBXGroup;
+			children = (
+				35DACB31257D105E009D4A60 /* SharedExtension.entitlements */,
+				35DACB22257D083D009D4A60 /* ShareViewController.swift */,
+				35DACB24257D083D009D4A60 /* MainInterface.storyboard */,
+				35DACB27257D083D009D4A60 /* Info.plist */,
+			);
+			path = SharedExtension;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -160,15 +221,34 @@
 				0CCC36CA257AC73700FD0454 /* Sources */,
 				0CCC36CB257AC73700FD0454 /* Frameworks */,
 				0CCC36CC257AC73700FD0454 /* Resources */,
+				35DACB2E257D083D009D4A60 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				35DACB29257D083D009D4A60 /* PBXTargetDependency */,
 			);
 			name = OuviFalar;
 			productName = OuviFalar;
 			productReference = 0CCC36CE257AC73700FD0454 /* OuviFalar.app */;
 			productType = "com.apple.product-type.application";
+		};
+		35DACB1F257D083D009D4A60 /* SharedExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 35DACB2B257D083D009D4A60 /* Build configuration list for PBXNativeTarget "SharedExtension" */;
+			buildPhases = (
+				35DACB1C257D083D009D4A60 /* Sources */,
+				35DACB1D257D083D009D4A60 /* Frameworks */,
+				35DACB1E257D083D009D4A60 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SharedExtension;
+			productName = SharedExtension;
+			productReference = 35DACB20257D083D009D4A60 /* SharedExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -180,6 +260,9 @@
 				LastUpgradeCheck = 1220;
 				TargetAttributes = {
 					0CCC36CD257AC73700FD0454 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+					35DACB1F257D083D009D4A60 = {
 						CreatedOnToolsVersion = 12.2;
 					};
 				};
@@ -198,6 +281,7 @@
 			projectRoot = "";
 			targets = (
 				0CCC36CD257AC73700FD0454 /* OuviFalar */,
+				35DACB1F257D083D009D4A60 /* SharedExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -210,6 +294,14 @@
 				0CCC36E1257AC74100FD0454 /* LaunchScreen.storyboard in Resources */,
 				0CCC36DE257AC74100FD0454 /* Preview Assets.xcassets in Resources */,
 				0CCC36DB257AC74100FD0454 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		35DACB1E257D083D009D4A60 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35DACB26257D083D009D4A60 /* MainInterface.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,7 +329,30 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		35DACB1C257D083D009D4A60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35DACB45257D2078009D4A60 /* WaitingRoomView.swift in Sources */,
+				35DACB48257D207B009D4A60 /* WaitingRoomIcons.swift in Sources */,
+				35DACB51257D2091009D4A60 /* TweetIntentClassifier.mlmodel in Sources */,
+				35DACB23257D083D009D4A60 /* ShareViewController.swift in Sources */,
+				35DACB3F257D206E009D4A60 /* PositiveResultCard.swift in Sources */,
+				35DACB3C257D206B009D4A60 /* ResultView.swift in Sources */,
+				35DACB4E257D2087009D4A60 /* SearchingBank.swift in Sources */,
+				35DACB42257D2071009D4A60 /* NegativeResultCard.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		35DACB29257D083D009D4A60 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 35DACB1F257D083D009D4A60 /* SharedExtension */;
+			targetProxy = 35DACB28257D083D009D4A60 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		0CCC36DF257AC74100FD0454 /* LaunchScreen.storyboard */ = {
@@ -246,6 +361,14 @@
 				0CCC36E0257AC74100FD0454 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		35DACB24257D083D009D4A60 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				35DACB25257D083D009D4A60 /* Base */,
+			);
+			name = MainInterface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -370,11 +493,13 @@
 		0CCC36E6257AC74100FD0454 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = OuviFalar/OuviFalar.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"OuviFalar/Preview Content\"";
-				DEVELOPMENT_TEAM = ZHXRJ72927;
+				DEVELOPMENT_TEAM = P63952MS7L;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = OuviFalar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -391,11 +516,13 @@
 		0CCC36E7257AC74100FD0454 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = OuviFalar/OuviFalar.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"OuviFalar/Preview Content\"";
-				DEVELOPMENT_TEAM = 389X9SAV47;
+				DEVELOPMENT_TEAM = P63952MS7L;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = OuviFalar/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -404,6 +531,46 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = br.ufpe.academy.OuviFalar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		35DACB2C257D083D009D4A60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SharedExtension/SharedExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P63952MS7L;
+				INFOPLIST_FILE = SharedExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.ufpe.academy.OuviFalar.SharedExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		35DACB2D257D083D009D4A60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = SharedExtension/SharedExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = P63952MS7L;
+				INFOPLIST_FILE = SharedExtension/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.ufpe.academy.OuviFalar.SharedExtension;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -426,6 +593,15 @@
 			buildConfigurations = (
 				0CCC36E6257AC74100FD0454 /* Debug */,
 				0CCC36E7257AC74100FD0454 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		35DACB2B257D083D009D4A60 /* Build configuration list for PBXNativeTarget "SharedExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				35DACB2C257D083D009D4A60 /* Debug */,
+				35DACB2D257D083D009D4A60 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

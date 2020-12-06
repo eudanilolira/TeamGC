@@ -103,10 +103,3 @@ struct OnboardView_Previews: PreviewProvider{
     }
 }
 
-extension Color {
-    static let primaryColor = Color(red: 0x66/0xff, green: 0x99/0xff, blue: 0xf2/0xff)
-    
-    static let darkYellowColor = Color(red: 0x89/0xff, green: 0x91/0xff, blue: 0xf08/0xff)
-    
-    static let lightYellowColor = Color(red: 0xf2/0xff, green: 0xdc/0xff, blue: 0x66/0xff)
-}

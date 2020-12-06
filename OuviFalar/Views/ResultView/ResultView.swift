@@ -9,7 +9,9 @@ import SwiftUI
 import UIKit
 
 struct ResultView: View {
-    var test = false
+    
+    @ObservedObject var item: Search
+    
     @State private var isShareSheetShowing = false
     
     struct  Historico {
@@ -21,7 +23,7 @@ struct ResultView: View {
     
     var body: some View {
         VStack{
-            if test{
+            if item.intent == "contra"{
                 
                 PositiveResultCard()
                     .padding()
@@ -69,7 +71,8 @@ struct ResultView: View {
                 }
                 
                 
-            }else{
+            }
+            else{
                 NegativeResultCard()
                 Spacer()
                     .frame(height: 85)
@@ -85,7 +88,7 @@ struct ResultView: View {
                 .sheet(isPresented: $isShareSheetShowing, onDismiss: {
                     print("Dismiss")
                 }, content: {
-                    ActivityViewController(activityItems: ["FAKE NEWS!\nChequei no Ouvi falar e \"Texto\" tem indícios de FAKE NEWS"])
+                    ActivityViewController(activityItems: ["Cuidado!\nChequei no Ouvi falar e \"\(item.text)\" tem indícios de ser fake news. Não assuma como verdade!"])
                 })
                 .foregroundColor(.black)
                 .frame(width: 150, height: 60)
@@ -96,12 +99,16 @@ struct ResultView: View {
                 
             }
         }
+        .onAppear{
+//            let userDefaults = UserDefaults(suiteName: "group.br.ufpe.academy.OuviFalar")
+//            userDefaults?.setValue("", forKey: "start-text-key")
+        }
     }
 }
 
 struct ResultView_Previews: PreviewProvider {
     static var previews: some View {
-        ResultView()
+        ResultView(item: Search(text: "Coringa mata"))
     }
 }
 

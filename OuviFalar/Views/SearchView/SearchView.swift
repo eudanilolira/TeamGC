@@ -25,6 +25,7 @@ struct SearchView: View {
     
     let textField = UITextView()
     
+    
     var body: some View {
         ZStack(alignment: .bottom){
             VStack{
@@ -149,7 +150,12 @@ struct SearchView: View {
         }
         .navigationTitle("Pesquisa")
         .navigationBarHidden(false)
-        
+        .onAppear{
+//            let userDefaults = UserDefaults(suiteName: "group.br.ufpe.academy.OuviFalar")
+//            if let text = userDefaults?.string(forKey: "start-text-key"){
+//                searchText = text
+//            }
+        }
     }
     
 }

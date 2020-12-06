@@ -24,7 +24,7 @@ struct NegativeResultCard: View {
                 .padding()
             
             
-            Text("Acreditamos que esse tema tem grande potencial de ser fake news e por isso não recomendamos seu compartilhamento.")
+            Text("Acreditamos que esse tema tem grande potencial de ser fake news. Clique no botão abaixo para compartilhar e alertar!")
                 .multilineTextAlignment(.center)
                 .foregroundColor(Color.white)
                 .frame(width: 290.0)

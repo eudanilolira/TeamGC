@@ -70,7 +70,7 @@ struct SearchView: View {
                     Text("Checar")
                         .padding()
                         .padding(.horizontal, 40)
-                        .background(UIColor.primaryColor)
+                        .background(Color.primaryColor)
                         .foregroundColor(Color(.systemBackground))
                         .cornerRadius(10)
                         .shadow(radius: 7)
@@ -113,7 +113,7 @@ struct SearchView: View {
                             }
                             
                             .frame(maxWidth: 320)
-                            .background(UIColor.primaryColor)
+                            .background(Color.primaryColor)
                             .cornerRadius(20)
                             .padding()
                             

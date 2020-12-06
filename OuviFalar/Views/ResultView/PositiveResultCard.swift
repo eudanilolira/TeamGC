@@ -8,7 +8,6 @@
 import SwiftUI
 
 struct PositiveResultCard: View {
-    let color = Color(red: 0x66/0xff, green: 0x99/0xff, blue: 0xf2/0xff)
     var textoPesquisado: String = "Coloquina mata"
     
     var body: some View {
@@ -25,7 +24,7 @@ struct PositiveResultCard: View {
                 .padding()
             
             
-            Text("Acreditamos que esse tema tem grande potencial de ser verídico, mas recomendamos que você avalie a fonte antes de compartilhá-la.")
+            Text("Não encontramos indícios claros de que essa mensagem seja fake news, mas recomendamos que você avalie a fonte antes de compartilhá-la.")
                 .multilineTextAlignment(.center)
                 .foregroundColor(Color.white)
                 .frame(width: 290.0)
@@ -36,7 +35,7 @@ struct PositiveResultCard: View {
             
         }
         .frame(width: 350, alignment: .center)
-        .background(color).cornerRadius(15)
+        .background(Color.primaryColor).cornerRadius(15)
     }
 }
 

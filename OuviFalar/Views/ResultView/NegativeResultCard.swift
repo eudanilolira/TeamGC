@@ -14,7 +14,7 @@ struct NegativeResultCard: View {
         VStack{
             Text("\"\(textoPesquisado)\"")
                 .fontWeight(.bold)
-                .foregroundColor(Color.white)
+                .foregroundColor(Color.black)
                 .padding(.top, 30.0)
             
             Spacer()
@@ -26,7 +26,7 @@ struct NegativeResultCard: View {
             
             Text("Acreditamos que esse tema tem grande potencial de ser fake news. Clique no botão abaixo para compartilhar e alertar!")
                 .multilineTextAlignment(.center)
-                .foregroundColor(Color.white)
+                .foregroundColor(Color.black)
                 .frame(width: 290.0)
                 .padding()
             
@@ -35,7 +35,7 @@ struct NegativeResultCard: View {
             
         }
         .frame(width: 350, alignment: .center)
-        .background(Color(.systemRed)).cornerRadius(15)
+        .background(Color.lightYellowColor).cornerRadius(15)
     }
 }
 

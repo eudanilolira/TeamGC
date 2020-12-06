@@ -35,7 +35,7 @@ struct PositiveResultCard: View {
             
         }
         .frame(width: 350, alignment: .center)
-        .background(UIColor.primaryColor).cornerRadius(15)
+        .background(Color.primaryColor).cornerRadius(15)
     }
 }
 

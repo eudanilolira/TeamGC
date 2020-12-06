@@ -9,7 +9,7 @@ import SwiftUI
 import UIKit
 
 struct ResultView: View {
-    var test = true
+    var test = false
     @State private var isShareSheetShowing = false
     
     struct  Historico {
@@ -60,7 +60,7 @@ struct ResultView: View {
                             }
                             
                             .frame(maxWidth: 320)
-                            .background(UIColor.primaryColor)
+                            .background(Color.primaryColor)
                             .cornerRadius(20)
                             .padding()
                             
@@ -80,15 +80,19 @@ struct ResultView: View {
                     
                 }, label: {
                     Text("Compartilhar")
-                }).sheet(isPresented: $isShareSheetShowing, onDismiss: {
+                        .fontWeight(.medium)
+                })
+                .sheet(isPresented: $isShareSheetShowing, onDismiss: {
                     print("Dismiss")
                 }, content: {
-                    ActivityViewController(activityItems: ["Veja a notícia que eu chequei no Ouvi falar"])
+                    ActivityViewController(activityItems: ["FAKE NEWS!\nChequei no Ouvi falar e \"Texto\" tem indícios de FAKE NEWS"])
                 })
-                .foregroundColor(.white)
+                .foregroundColor(.black)
                 .frame(width: 150, height: 60)
-                .background(UIColor.primaryColor)
+                .background(Color.lightYellowColor)
                 .cornerRadius(15)
+                .shadow(radius: 5
+                )
                 
             }
         }

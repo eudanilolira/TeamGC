@@ -47,11 +47,6 @@ struct WaitingRoomView: View {
                 .font(Font.system(size: 20, design: .default))
                 .padding()
             
-            if let intent = item.intent{
-                Text(intent)
-            }
-            
-            
             HStack {
                 Text("Como checamos?")
                     .font(.headline)

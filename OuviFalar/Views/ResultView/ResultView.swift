@@ -23,7 +23,7 @@ struct ResultView: View {
     
     var body: some View {
         VStack{
-            if item.intent == "contra"{
+            if item.information == .info{
                 
                 PositiveResultCard(searchText: item.text)
                     .padding()

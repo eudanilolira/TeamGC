@@ -28,6 +28,12 @@ enum Intent: String{
     case outros
 }
 
+enum Information: String{
+    case desinfo
+    case info
+    case outros
+}
+
 protocol ShareViewDelegate{
     func changeView()
 }
@@ -36,30 +42,60 @@ class Search: ObservableObject{
     
     var text: String
     
-    @Published var intent: String?
+    @Published var intent: Intent?
+    
+    @Published var information: Information?
     
     @Published var isConcluded = false
     
     @Published var theme: Theme?
     
+    
+    
     var delegate: ShareViewDelegate?
     
     init(text: String){
         self.text = text
+        
+        
     }
     
     init(text: String, delegate: ShareViewDelegate) {
         self.text = text
         self.delegate = delegate
+        
     }
     func startSearch(){
         print("Started searching")
         do{
             let label = try TweetIntentClassifier(configuration: .init()).prediction(text: self.text)
-            print("got label", label.label)
+            print("got label ", label.label)
             if let intent = Intent(rawValue: label.label) {
-                self.intent = intent.rawValue
+                self.intent = intent
             }
+            else{
+                self.intent = .outros
+            }
+            
+            let desinfoLabel = try TweetDesinfoClassifier(configuration: .init()).prediction(text: self.text)
+            print("got desinfo ", desinfoLabel.label)
+            
+            if let information = Information(rawValue: desinfoLabel.label){
+                self.information = information
+            }
+            else{
+                self.information = .outros
+            }
+            
+            if self.information == .info{
+                
+                if self.intent == .favor || self.intent == .humor{
+                    self.information = .desinfo
+                }
+                
+                
+            }
+            
         }
         catch{
             print(error)

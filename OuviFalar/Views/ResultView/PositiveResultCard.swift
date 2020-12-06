@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct PositiveResultCard: View {
-    var textoPesquisado: String = "Coloquina mata"
+    var searchText: String
     
     var body: some View {
         VStack{
-            Text("\"\(textoPesquisado)\"")
+            Text("\"\(searchText)\"")
                 .fontWeight(.bold)
                 .foregroundColor(Color.white)
                 .padding(.top, 30.0)
@@ -41,6 +41,6 @@ struct PositiveResultCard: View {
 
 struct PositiveResultCard_Previews: PreviewProvider {
     static var previews: some View {
-        PositiveResultCard()
+        PositiveResultCard(searchText: "Cloroquina mata")
     }
 }

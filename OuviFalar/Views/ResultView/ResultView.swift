@@ -25,7 +25,7 @@ struct ResultView: View {
         VStack{
             if item.intent == "contra"{
                 
-                PositiveResultCard()
+                PositiveResultCard(searchText: item.text)
                     .padding()
                 
                 HStack {
@@ -73,7 +73,7 @@ struct ResultView: View {
                 
             }
             else{
-                NegativeResultCard()
+                NegativeResultCard(searchText: item.text)
                 Spacer()
                     .frame(height: 85)
                 

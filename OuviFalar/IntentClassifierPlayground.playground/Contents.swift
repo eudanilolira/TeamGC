@@ -16,7 +16,7 @@ do {
     print("Training accuracy: \(trainingAccuracy)")
     print("Validation accuracy: \(validationAccuracy)")
     print("Evaluation accuracy: \(evaluationAccuracy)")
-    let metadata = MLModelMetadata(author: "Samuel Brasileiro", shortDescription: "A model trained to classify the intent of the tweet", version: "2.0")
+    let metadata = MLModelMetadata(author: "Samuel Brasileiro", shortDescription: "A model trained to classify the intent of the tweet", version: "3.0")
     let modelFileURL = URL(fileURLWithPath: "../../TweetIntentClassifier.mlmodel")
 
     try intentClassifier.write(to: modelFileURL, metadata: metadata)

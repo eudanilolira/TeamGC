@@ -20,6 +20,10 @@
 		0CD0B4F3257AC8EF00F2005E /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD0B4F2257AC8EF00F2005E /* OnboardingView.swift */; };
 		0CD0B4F6257AC90700F2005E /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD0B4F5257AC90700F2005E /* ResultView.swift */; };
 		0CD0B4FA257AC96C00F2005E /* WaitingRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD0B4F9257AC96C00F2005E /* WaitingRoomView.swift */; };
+		353EDF6B257DC67A00A2D528 /* TweetIntentClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 353EDF6A257DC67A00A2D528 /* TweetIntentClassifier.mlmodel */; };
+		353EDF6C257DC67A00A2D528 /* TweetIntentClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 353EDF6A257DC67A00A2D528 /* TweetIntentClassifier.mlmodel */; };
+		353EDF70257DC68000A2D528 /* TweetDesinfoClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 353EDF6F257DC68000A2D528 /* TweetDesinfoClassifier.mlmodel */; };
+		353EDF71257DC68000A2D528 /* TweetDesinfoClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 353EDF6F257DC68000A2D528 /* TweetDesinfoClassifier.mlmodel */; };
 		35DACB12257C2E6D009D4A60 /* View+ResignKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DACB11257C2E6D009D4A60 /* View+ResignKeyboard.swift */; };
 		35DACB23257D083D009D4A60 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DACB22257D083D009D4A60 /* ShareViewController.swift */; };
 		35DACB26257D083D009D4A60 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35DACB24257D083D009D4A60 /* MainInterface.storyboard */; };
@@ -30,10 +34,6 @@
 		35DACB45257D2078009D4A60 /* WaitingRoomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD0B4F9257AC96C00F2005E /* WaitingRoomView.swift */; };
 		35DACB48257D207B009D4A60 /* WaitingRoomIcons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1404B9257AE21000716069 /* WaitingRoomIcons.swift */; };
 		35DACB4E257D2087009D4A60 /* SearchingBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CAEB278257ACA82003091FC /* SearchingBank.swift */; };
-		35FF1235257DA16B0007ABCD /* TweetDesinfoClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 35FF1234257DA16B0007ABCD /* TweetDesinfoClassifier.mlmodel */; };
-		35FF1236257DA16B0007ABCD /* TweetDesinfoClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 35FF1234257DA16B0007ABCD /* TweetDesinfoClassifier.mlmodel */; };
-		35FF123A257DA1750007ABCD /* TweetIntentClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 35FF1239257DA1750007ABCD /* TweetIntentClassifier.mlmodel */; };
-		35FF123B257DA1750007ABCD /* TweetIntentClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 35FF1239257DA1750007ABCD /* TweetIntentClassifier.mlmodel */; };
 		857EAF3E257D539100D0014E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CCC36DA257AC74100FD0454 /* Assets.xcassets */; };
 		ACFC5E90257ACDC700881712 /* PositiveResultCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFC5E8F257ACDC700881712 /* PositiveResultCard.swift */; };
 		ACFC5E94257AD73B00881712 /* NegativeResultCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFC5E93257AD73B00881712 /* NegativeResultCard.swift */; };
@@ -79,7 +79,9 @@
 		0CD0B4F2257AC8EF00F2005E /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		0CD0B4F5257AC90700F2005E /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
 		0CD0B4F9257AC96C00F2005E /* WaitingRoomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaitingRoomView.swift; sourceTree = "<group>"; };
-		354455D8257BCDB90005D45B /* IntentClassifierPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = IntentClassifierPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		353EDF65257DC5FA00A2D528 /* ClassifierPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = ClassifierPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		353EDF6A257DC67A00A2D528 /* TweetIntentClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = TweetIntentClassifier.mlmodel; sourceTree = "<group>"; };
+		353EDF6F257DC68000A2D528 /* TweetDesinfoClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = TweetDesinfoClassifier.mlmodel; sourceTree = "<group>"; };
 		35DACB11257C2E6D009D4A60 /* View+ResignKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+ResignKeyboard.swift"; sourceTree = "<group>"; };
 		35DACB20257D083D009D4A60 /* SharedExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SharedExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		35DACB22257D083D009D4A60 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
@@ -87,8 +89,6 @@
 		35DACB27257D083D009D4A60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		35DACB31257D105E009D4A60 /* SharedExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SharedExtension.entitlements; sourceTree = "<group>"; };
 		35DACB34257D1074009D4A60 /* OuviFalar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = OuviFalar.entitlements; sourceTree = "<group>"; };
-		35FF1234257DA16B0007ABCD /* TweetDesinfoClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = TweetDesinfoClassifier.mlmodel; sourceTree = "<group>"; };
-		35FF1239257DA1750007ABCD /* TweetIntentClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = TweetIntentClassifier.mlmodel; sourceTree = "<group>"; };
 		ACFC5E8F257ACDC700881712 /* PositiveResultCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositiveResultCard.swift; sourceTree = "<group>"; };
 		ACFC5E93257AD73B00881712 /* NegativeResultCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NegativeResultCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -137,11 +137,11 @@
 				0CCC36D1257AC73700FD0454 /* AppDelegate.swift */,
 				35DACB11257C2E6D009D4A60 /* View+ResignKeyboard.swift */,
 				0CAEB278257ACA82003091FC /* SearchingBank.swift */,
-				35FF1239257DA1750007ABCD /* TweetIntentClassifier.mlmodel */,
-				35FF1234257DA16B0007ABCD /* TweetDesinfoClassifier.mlmodel */,
-				354455D8257BCDB90005D45B /* IntentClassifierPlayground.playground */,
 				0CCC36D3257AC73700FD0454 /* SceneDelegate.swift */,
 				0CCC36D5257AC73700FD0454 /* ContentView.swift */,
+				353EDF6A257DC67A00A2D528 /* TweetIntentClassifier.mlmodel */,
+				353EDF6F257DC68000A2D528 /* TweetDesinfoClassifier.mlmodel */,
+				353EDF65257DC5FA00A2D528 /* ClassifierPlayground.playground */,
 				0CCC36DA257AC74100FD0454 /* Assets.xcassets */,
 				0CCC36DF257AC74100FD0454 /* LaunchScreen.storyboard */,
 				0CCC36E2257AC74100FD0454 /* Info.plist */,
@@ -318,16 +318,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35FF123A257DA1750007ABCD /* TweetIntentClassifier.mlmodel in Sources */,
 				0CCC36D2257AC73700FD0454 /* AppDelegate.swift in Sources */,
 				0CCC36D4257AC73700FD0454 /* SceneDelegate.swift in Sources */,
 				0CCC36D6257AC73700FD0454 /* ContentView.swift in Sources */,
+				353EDF70257DC68000A2D528 /* TweetDesinfoClassifier.mlmodel in Sources */,
+				353EDF6B257DC67A00A2D528 /* TweetIntentClassifier.mlmodel in Sources */,
 				0CD0B4FA257AC96C00F2005E /* WaitingRoomView.swift in Sources */,
 				ACFC5E90257ACDC700881712 /* PositiveResultCard.swift in Sources */,
 				0CD0B4F3257AC8EF00F2005E /* OnboardingView.swift in Sources */,
 				0CD0B4EF257AC8CD00F2005E /* SearchView.swift in Sources */,
 				0CD0B4F6257AC90700F2005E /* ResultView.swift in Sources */,
-				35FF1235257DA16B0007ABCD /* TweetDesinfoClassifier.mlmodel in Sources */,
 				0C1404BA257AE21000716069 /* WaitingRoomIcons.swift in Sources */,
 				ACFC5E94257AD73B00881712 /* NegativeResultCard.swift in Sources */,
 				35DACB12257C2E6D009D4A60 /* View+ResignKeyboard.swift in Sources */,
@@ -340,13 +340,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				353EDF71257DC68000A2D528 /* TweetDesinfoClassifier.mlmodel in Sources */,
 				35DACB45257D2078009D4A60 /* WaitingRoomView.swift in Sources */,
 				35DACB48257D207B009D4A60 /* WaitingRoomIcons.swift in Sources */,
 				35DACB23257D083D009D4A60 /* ShareViewController.swift in Sources */,
-				35FF123B257DA1750007ABCD /* TweetIntentClassifier.mlmodel in Sources */,
 				35DACB3F257D206E009D4A60 /* PositiveResultCard.swift in Sources */,
-				35FF1236257DA16B0007ABCD /* TweetDesinfoClassifier.mlmodel in Sources */,
 				35DACB3C257D206B009D4A60 /* ResultView.swift in Sources */,
+				353EDF6C257DC67A00A2D528 /* TweetIntentClassifier.mlmodel in Sources */,
 				35DACB4E257D2087009D4A60 /* SearchingBank.swift in Sources */,
 				35DACB42257D2071009D4A60 /* NegativeResultCard.swift in Sources */,
 			);
